@@ -32,7 +32,8 @@ def get_tiktok_metrics(tiktok_username):
     
 
 if __name__ == "__main__":
-    tiktok_username = "todayonline"
+    tiktok_username = "channelnewsasia"
     metrics = get_tiktok_metrics(tiktok_username)
     df = pd.DataFrame(metrics)
-    df.to_csv("tiktok_metrics.csv")
+    df.to_csv("tiktok_metrics_@{}.csv".format(tiktok_username))
+    
